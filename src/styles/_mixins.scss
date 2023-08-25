@@ -1,0 +1,15 @@
+@mixin applyColor($color, $map: ()) {
+    @if  map-has-key($map, $color) {
+        color: map-get($map, $color);
+    } @else {
+        color: $color;
+    }
+}
+
+@mixin applyBackgroundColor($color, $map: ()) {
+    @if  map-has-key($map, $color) {
+        background-color: map-get($map, $color);
+    } @else {
+        background-color: $color;
+    }
+}

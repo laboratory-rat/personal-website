@@ -1,0 +1,53 @@
+@import '../../styles/index';
+
+.terminal__output {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+  justify-content: flex-end;
+  width: 100%;
+
+  @include applyBackgroundColor($backgroundColor);
+  line-height: $lineHeight;
+  font-size: $fontSize;
+  padding: .5rem .5rem 0;
+
+  .terminal__output-line {
+    white-space: pre;
+    @include applyColor('rs', $allLinuxColorsMap);
+
+    &-content--directory {
+      @include applyColor('directory', $allLinuxColorsMap);
+    }
+
+    &-content--file {
+      @include applyColor('rs', $allLinuxColorsMap);
+    }
+
+    &-content--executable {
+      @include applyColor('executable', $allLinuxColorsMap);
+    }
+
+    &-content--link a {
+      @include applyColor('symbolic-link', $allLinuxColorsMap);
+      text-decoration: none;
+    }
+
+    &-content--command {
+      @include applyColor('symbolic-link', $allLinuxColorsMap);
+    }
+
+    &-content--squared {
+      width: 1.3rem;
+      display: inline-block;
+      text-align: center;
+    }
+
+    .terminal__output-line-content {
+      &--link {
+        @include applyColor('symbolic-link', $allLinuxColorsMap);
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@import './styles/index';
+
+.terminal__container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100dvh;
+  @include applyBackgroundColor($backgroundColor);
+  padding: 1rem;
+
+  input, span, textarea {
+    font-family: monospace;
+  }
+
+  .terminal__io {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .terminal__help {
+    display: none; // I do not need the help panel now
+    flex: 1;
+    flex-direction: column;
+    height: 100%;
+  }
+}
