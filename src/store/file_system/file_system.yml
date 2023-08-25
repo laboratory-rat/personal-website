@@ -52,7 +52,7 @@ root:
               children:
                 - name: "CV.link"
                   type: "link"
-                  link: "/Oleh_Tymofieiev.pdf"
+                  link: "./assets/Oleh_Tymofieiev.pdf"
                 - name: "Github.link"
                   type: "link"
                   link: "https://github.com/laboratory-rat"

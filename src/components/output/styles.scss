@@ -15,6 +15,7 @@
 
   .terminal__output-line {
     white-space: pre;
+    text-wrap: wrap;
     @include applyColor('rs', $allLinuxColorsMap);
 
     &-content--directory {

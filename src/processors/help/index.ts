@@ -79,7 +79,7 @@ const action = (input: string) => {
         addSpan('Github', 'link', 'https://github.com/laboratory-rat'),
         addSpan(' (source code for this website is also here) ', 'plain'),
         addSpan('and ', 'plain'),
-        addSpan('CV', 'link', '/assets/Oleh_Tymofieiev.pdf'),
+        addSpan('CV', 'link', './assets/Oleh_Tymofieiev.pdf'),
     );
 
     addLine(
